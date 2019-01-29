@@ -3,14 +3,14 @@
         "module":"commonjs",        /* Specify module code generation: 'commonjs', 'amd', 'system', 'umd' or 'es2015'. */
         "target":"ES6",             /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'. */
         "jsx": "react",             /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
-        "outDir": "./app/build",    /* Redirect output structure to the directory. */
-        "rootDir": "./app/src",     /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+        "outDir": "./tsc",    /* Redirect output structure to the directory. */
+        "rootDir": "./game",     /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
         "removeComments": true,
         "noImplicitAny": false,
         "sourceMap": true           /* Generates corresponding '.map' file. */  
     },
-    "files": [
-        "todo.tsx",
+    "include": [
+        "game/**/*.tsx"
     ],
     "exclude":[
         "node_modules"

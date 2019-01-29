@@ -1,0 +1,10 @@
+#game{
+    background-color: rgb(99, 99, 192);
+}
+.cell{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    border-color: black;
+    background-color: rgb(99, 99, 192);;
+}
