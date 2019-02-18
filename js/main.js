@@ -9,5 +9,5 @@ const board_1 = require("./board");
 const root = document.getElementById('game');
 var store = redux_1.createStore(index_1.default);
 react_dom_1.render(React.createElement(react_redux_1.Provider, { store: store },
-    React.createElement(board_1.default, { text: "Here will be the board!" })), root);
+    React.createElement(board_1.default, null)), root);
 //# sourceMappingURL=main.js.map

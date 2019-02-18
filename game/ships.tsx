@@ -2,21 +2,25 @@
 // dependencies
 import * as React from 'react';
 //files
-export interface PositionProps{
+export interface PositionType{
     x:number;
     y:number;
 }
-export interface ShipProps{
+export interface ShipType{
     name:string;
-    position: PositionProps[];
+    position: PositionType[];
     health: number;
 }
+export interface ShipProps{
+    ships: ShipType[];
+}
 
-export default class Ships extends React.Component{
-    ships: ShipProps[];
+export default class Ships extends React.Component<ShipProps>{    
     constructor(props){
         super(props);
-        this.ships= props.ships;
+        this.state={
+            ships: props.ships
+        }
     }
     render(){
         return(

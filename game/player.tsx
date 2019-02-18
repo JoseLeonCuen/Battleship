@@ -2,13 +2,13 @@
 // dependencies
 import * as React from 'react';
 // files
-import Ships, {ShipProps} from './ships';
+import Ships, {ShipType} from './ships';
 import Grid from './grid';
 
 export interface PlayerProps{
     player:{
         id:number;
-        ships:ShipProps[];
+        ships:ShipType[];
     }
 }
 
@@ -22,7 +22,7 @@ export default function Player(props:PlayerProps){
             <React.Fragment>
                 <Ships ships={props.player.ships}/>
                 <Grid player={props.player.id}/>
-            </React.Fragment>            
+            </React.Fragment>
         )
     // }
 }

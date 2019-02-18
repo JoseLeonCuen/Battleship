@@ -11,14 +11,14 @@ const Game = (props)=>{
     return (
         <div>
             <h1>Battleship</h1>
-            <Player player={props.players[0]}/>
-            <Player player={props.players[1]}/>
+            <Player player={props.player[1]}/>
+            <Player player={props.player[2]}/>
         </div>
     )
 }
-const mapStateToProps = state =>{
-    return{
-        players: state.players
+const mapStateToProps = state => {
+    return {
+        player: state.player
     }
 }
 

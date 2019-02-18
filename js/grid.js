@@ -5,8 +5,10 @@ const cell_1 = require("./cell");
 class Grid extends React.Component {
     constructor(props) {
         super(props);
-        this.player = props.player;
-        this.grid = [];
+        this.state = {
+            player: this.props.player,
+            grid: []
+        };
     }
     generateGrid() {
     }

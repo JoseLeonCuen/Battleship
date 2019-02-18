@@ -5,13 +5,15 @@ import * as React from 'react';
 import Cell, {CellProps} from './cell';
 
 
-export default class Grid extends React.Component{
-    player: number;
+export default class Grid extends React.Component<{ player: number}>{
+    // player: number;
     grid:CellProps[];
     constructor(props){
         super(props);
-        this.player=props.player;
-        this.grid=[];
+        this.state={
+            player: this.props.player,
+            grid:[]
+        }        
     }
     generateGrid(){
 

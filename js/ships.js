@@ -4,7 +4,9 @@ const React = require("react");
 class Ships extends React.Component {
     constructor(props) {
         super(props);
-        this.ships = props.ships;
+        this.state = {
+            ships: props.ships
+        };
     }
     render() {
         return (React.createElement("h2", null, "This will display the ships"));

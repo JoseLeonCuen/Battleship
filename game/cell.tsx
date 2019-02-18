@@ -1,11 +1,12 @@
 
 // depedencies
 import * as React from 'react';
-//files
-import {PositionProps} from './ships';
+
+// files
+import { PositionType } from './ships';
 
 export interface CellProps{
-    position: PositionProps;
+    position: PositionType;
     hit: string;
 }
 
