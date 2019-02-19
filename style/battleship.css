@@ -1,10 +1,15 @@
-#game{
-    background-color: rgb(99, 99, 192);
+html, body{
+    margin:0;
+    padding:0;
 }
-.cell{
+#game{
+    background-color: rgb(168, 168, 168);
+}
+.board{
+    border: 1 px solid black;
+}
+.player{
+    width:40%;
+    margin: 10px 5%;
     display:inline-block;
-    width:20px;
-    height:20px;
-    border-color: black;
-    background-color: rgb(99, 99, 192);;
 }

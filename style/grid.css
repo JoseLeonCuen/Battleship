@@ -1,0 +1,19 @@
+
+.grid{
+    width:100%;
+    margin: 10px 0;
+}
+.gridRow{
+    width:90%;
+    margin:0 5%;
+}
+.cell{
+    display:inline-block;
+    margin:0;
+    box-sizing: border-box;
+    width:10%;
+    height:40px;
+    border-color: black;
+    background-color: rgb(67, 144, 233);
+    border:1px solid rgb(28, 28, 214);
+}

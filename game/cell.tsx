@@ -10,11 +10,8 @@ export interface CellProps{
     hit: string;
 }
 
-export default class Cell extends React.Component{
-    constructor(props){
-        super(props);
-    }
-    render(){
-        return(<div className="cell"></div>)
-    }
+export default function Cell(props){
+    return(
+        <div className="cell"></div>
+    )    
 }

@@ -7,9 +7,10 @@ import Grid from './grid';
 
 export interface PlayerProps{
     player:{
-        id:number;
-        ships:ShipType[];
+        id: number;
+        ships: ShipType[];
     }
+    dispatch: Function;
 }
 
 export default function Player(props:PlayerProps){    
@@ -19,10 +20,10 @@ export default function Player(props:PlayerProps){
     // }
     // render(){
         return(
-            <React.Fragment>
+            <div className="player">
                 <Ships ships={props.player.ships}/>
                 <Grid player={props.player.id}/>
-            </React.Fragment>
+            </div>
         )
     // }
 }

@@ -1,0 +1,14 @@
+
+.shipList{
+    border: 2px solid white;
+    width:96%;
+    margin: 10px 2%;
+}
+.ship{
+    width: 15%;
+    margin: 10px 2%;
+    display:inline-block;
+    background:red;
+    color:white;
+    padding:5px;
+}

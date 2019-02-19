@@ -16,11 +16,28 @@ export default class Grid extends React.Component<{ player: number}>{
         }        
     }
     generateGrid(){
-
+        function generateRow(){
+            let row=[];
+            for(let i = 0; i < 10; i++){
+                row.push(<Cell/>)
+            }
+            return(
+                <div className="gridRow">
+                    {...row}
+                </div>             
+            )
+        }
+        var rows=[];
+        for(let i = 0; i < 10; i++){    
+            rows.push(generateRow())  
+        };
+        return rows;
     }
     render(){
         return(
-            <Cell/>
+            <div className="grid">
+                {...this.generateGrid()}
+            </div>
         )
     }
 }

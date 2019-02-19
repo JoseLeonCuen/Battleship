@@ -1,7 +1,7 @@
 
 
 // files
-import { PositionType } from './ships'
+import { PositionType } from '../ships'
 
 function generateShip(length: number, begin: PositionType, end: PositionType){
     var between=[];
@@ -26,11 +26,15 @@ function generateShip(length: number, begin: PositionType, end: PositionType){
 }
 
 function generateState(){
-    var player = {}
+    var player = {
+        1:{},
+        2:{}
+    }
     for(let i = 1; i < 3; i++){
         player[i].ships=[
             generateShip(2,{x:3,y:3}, {x:3,y:4}),
             generateShip(3,{x:1,y:1}, {x:1,y:3}),
+            generateShip(3,{x:9,y:3}, {x:9,y:6}),
             generateShip(4,{x:7,y:6}, {x:10,y:6}),
             generateShip(5,{x:6,y:1}, {x:6,y:5})
         ]
@@ -41,4 +45,4 @@ function generateState(){
     }
 }
 
-export default generateState();
+export default generateState;

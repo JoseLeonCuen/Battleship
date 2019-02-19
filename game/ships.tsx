@@ -1,7 +1,10 @@
 
 // dependencies
 import * as React from 'react';
-//files
+
+// files
+import listShips from './utils/shipPanel'
+
 export interface PositionType{
     x:number;
     y:number;
@@ -15,16 +18,13 @@ export interface ShipProps{
     ships: ShipType[];
 }
 
-export default class Ships extends React.Component<ShipProps>{    
-    constructor(props){
-        super(props);
-        this.state={
-            ships: props.ships
-        }
-    }
-    render(){
+export default function Ships(props: ShipProps){             
         return(
-            <h2>This will display the ships</h2>
+            <React.Fragment>
+                <h3>Ships</h3>
+                <div className="shipList">
+                    {listShips(props.ships)}
+                </div>            
+            </React.Fragment>            
         )
-    }
 }
